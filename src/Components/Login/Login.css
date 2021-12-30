@@ -1,0 +1,35 @@
+.vH-100{
+    background: #E5E5E5;
+
+}
+.LoginBody{
+   top: 25px;
+}
+.loginCard{
+    /* position: absolute; */
+/* width: 35rem; */
+min-height: 505px;
+/* left: 516px;
+top: 420px; */
+
+background: rgba(255, 255, 255, 0.2);
+border: 2px solid #ABABAB;
+box-sizing: border-box;
+border-radius: 4px;
+}
+.google{
+background: #FFFFFF;
+border: 1px solid #C7C7C7;
+box-sizing: border-box;
+border-radius: 57px;
+cursor:pointer;
+}
+
+input {
+    /* width: 100%; */
+    /* padding: 12px 20px; */
+    /* margin: 8px 0; */
+    /* box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid red; */
+  }

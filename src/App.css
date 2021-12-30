@@ -1,38 +1,208 @@
-.App {
-  text-align: center;
+*{
+  /* display: flex; */
+/* align-items: center;
+justify-content: center; */
+/* box-sizing:content-box */
+}
+a{text-decoration: none;}
+Link{text-decoration: none;}
+.loginBtn{
+  
+text-align: center;
+color: #EF4848;
+font-weight: 800;
+background: #FFFFFF;
+background-blend-mode: hard-light;
+border-radius: 180px;
+letter-spacing: 1px;
+
+}
+.dropdown-toggle{
+  letter-spacing: .2rem;
+}
+.card3{
+  position:relative;
+  box-shadow:  10px 40px 80px white;
+}
+.row{position: absolute;}
+.buttonD{clip-path: circle(28.0% at 52% 99%);
+}
+.plusIcon{font-weight: bold;font-size: 44px;padding-left: 12px;}
+ul {
+  list-style-type: none;
+ }
+ .colon{font-weight: bolder; font-size: xx-large;}
+ .infoHeads{font-size: larger;}
+ .infoinfo{font-size: larger;}
+ .Hospital{letter-spacing: .449rem;font-weight: bold;}
+.cardImage{clip-path: circle();background-color: black; width: 135px;height: 135px;text-align: center; align-self: center;background-image: url('https://imgur.com/7gxx4KG.png');background-repeat: no-repeat;background-size: contain;background-position: center;
+margin-left: .8rem;}
+.cardImage2{clip-path: circle();background-color: #550DCC; width: 135px;height: 135px;text-align: center; align-self: center;background-image: url('https://imgur.com/N4a6WcI.png');background-repeat: no-repeat;background-size: contain;background-position: center;
+  margin-left: .8rem;}
+  
+/* .relative{position:relative} */
+.BGImage{position: absolute;
+  border: 9px solid rgb(0, 0, 0);
+  height: 100px;
+    -moz-border-radius:75px;
+    -webkit-border-radius: 75px;
+    width: 100px;
+  
+  background: #F03D3D;
+  border: 12px solid #000000;
+  top: -35px;
+  left: -30px;
+}
+.BGText{
+position: absolute;
+
+top:10px ;
+left: 3px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-style: normal;
+font-weight: bolder;
+font-size: 24px;
+
+
+color: #FFFFFF;
+}
+.BGImage1{position: absolute;
+
+    border: 9px solid rgb(0, 0, 0);
+    background-color: #550DCC;
+    height: 100px;
+    -moz-border-radius:75px;
+    -webkit-border-radius: 75px;
+    width: 100px;
+    top: -40px;
+    right: -35px;
+}
+.certBG{background-image: url('https://imgur.com/83iekOE.png');background-repeat: no-repeat;background-size: contain;background-position: bottom;}
+.BGImage2{
+  position: absolute;
+  border: 10px solid rgb(0, 0, 0);
+
+  background-color: #EAA903;
+
+  height: 100px;
+  -moz-border-radius:75px;
+  -webkit-border-radius: 75px;
+  width: 100px;
+  top: -40px;
+  left: -35px;
+}
+.buttonY{
+  
+  clip-path: circle(67.4% at 100% 100%);
+  background: #EAA903;
+  background-repeat: no-repeat;
+  height:100px;
+  width:150px;
+}
+.buttonP{
+  /* position: absolute; */
+  clip-path: circle(67.4% at 2% 100%);
+
+  background:#550DCC;
+  background-repeat: no-repeat;
+  height:100px;
+  width:150px;
+} 
+.fa-phone{
+  position: absolute;
+  bottom: 13px;
+  left: 13px;
+  color: rgb(243, 237, 237);
+  /* font-size: 26px; */
+  font-size: 50px;
+}
+.fa-info{
+  position: absolute;
+  bottom: 13px;
+  right: 17px;
+  color: rgb(243, 237, 237);
+  /* font-size: 26px; */
+  font-size: 56px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+/*ModalDonor*/
+.ModalDonor{
+  /* position: absolute; */
+/* width: 160%; */
+/* max-height: 50rem; */
+/* align-items: center;
+justify-content: center;
+align-self: center;
+justify-self: center; */
+background: #550DCC;
+border: 40px solid #EAA903;
+box-sizing: border-box;
+}
+.VR{border-left:3px solid rgba(0, 0, 0, 0.226);height:390px;align-self: center;}
+
+.vr{border-left:2px solid rgba(0, 0, 0, 0.226);height:55px}
+.fa-user-circle{
+  font-Size: 190px;
+}
+/* .Abs{position: absolute;top:5px} */
+.Grp{
+  font-family: Poppins;
+font-style: normal;
+font-weight: 800;
+font-size: 65px;
+line-height: 33px;
+text-align: center;
+letter-spacing: 0.1em;
+
+color: rgba(255, 255, 255, 0.62);
+}
+.NM{
+  font-family: Revalia;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+/* line-height: 72px; */
+/* identical to box height */
+
+text-align: center;
+letter-spacing: 0.1em;
+
+color: rgba(255, 255, 255, 0.44);
+}
+.fa-map-marker-alt {
+  color: #EAA903;
+font-size: 43px;
+}
+.fa-phone-alt{
+  color: #EAA903;
+font-size: 33px;
+}
+.fa-facebook-alt{
+  color: #EAA903;
+font-size: 33px;
+}
+.joinedText{
+  font-family: Revalia;
+font-style: normal;
+font-weight: normal;
+font-size: 45px;
+/* line-height: 60px; */
+text-align: left;
+letter-spacing: 0.1rem;
+padding-left: 8px;
+color: rgba(255, 255, 255, 0.44);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.modal-open .modal {
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.ModalReciver{
+  background: #000000;
+border: 40px solid #EF4848;
+box-sizing: border-box;
+border-radius: 37px;
 }
