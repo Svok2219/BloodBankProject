@@ -18,6 +18,7 @@ import Ask from './Components/Ask/Ask';
 import Help from './Components/Help/Help';
 import ModalDonor from './Components/Donors/ModalDonor';
 import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
+import { useEffect } from 'react';
 
 export const Context=createContext({})
 
@@ -26,16 +27,39 @@ function App() {
   const [Loggedin,setLoggedin]=useState(false)
     console.log(Loggedin)
 
+    const [Donor,setDonor]=useState(false)
+    const [Reciever,setReciever]=useState(false)
+    const [concat,setConcat]=useState(false)
+    useEffect(()=>{
+      fetch('https://laalsalaam2021.onrender.com/Help/getHelpOffers')
+      .then((res)=>res.json())
+      .then((result)=>{setDonor(result)})
+  
+      fetch('https://laalsalaam2021.onrender.com/Application/getRequestApplications')
+      .then((res)=>res.json())
+      .then((result)=>{setReciever(result)})  
+      
+    },[])
+    
+    var children = false
+    Donor && Reciever ? children = Donor.concat(Reciever)  : children=false
+    // let shuffled = children.map(value => ({ value, sort: Math.random() }))
+    // .sort((a, b) => a.sort - b.sort)
+    // .map(({ value }) => console.log(value))
+
+
+    // console.log(Donor.length,Reciever.length,children)
+    
   return (
     <Context.Provider value={[Loggedin,setLoggedin]}>
     <Router>
     <Switch>
 
     <Route exact path="/">
-    <Home />
+    <Home concat={children}/>
     </Route>
     <Route path="/Home">
-    <Home />
+    <Home  />
     </Route>
     <Route path="/Login">
     <Login />
